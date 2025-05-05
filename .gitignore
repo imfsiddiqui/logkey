@@ -1,5 +1,5 @@
-# Ignore Python virtual environment directory
+# Ignore Python virtual environment directories
 venv/
 
-# Ignore CSV output file
-output.csv
+# Ignore CSV files
+inputs.csv
