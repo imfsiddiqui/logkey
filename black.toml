@@ -1,0 +1,3 @@
+[tool.black]
+line-length = 88 # Line length for formatting
+skip-string-normalization = false  # Keep or remove quotes based on the string style
