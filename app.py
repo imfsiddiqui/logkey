@@ -1,37 +1,46 @@
-import csv
+"""
+This script logs user input to a specified CSV file.
+The user can configure the exit key and the CSV file name via command-line arguments.
+By default, the exit key is 'q', and the CSV file is 'inputs.csv'.
+"""
+
 import argparse
+import csv
 
+# Set up argument parser
+parser = argparse.ArgumentParser(description='Log user input to a CSV file.')
+parser.add_argument(
+    '--exit-key', type=str, default='q', help='Key to exit the program (default: "q").'
+)
+parser.add_argument(
+    '--csv-file',
+    type=str,
+    default='inputs.csv',
+    help='CSV file to store inputs (default: "inputs.csv").',
+)
 
-def append_to_csv(filename, exit_key):
-    print(f"Enter text to append to '{filename}'. Type '{exit_key}' to quit.")
-    with open(filename, mode="a", newline="") as file:
+# Parse arguments
+args = parser.parse_args()
+exit_key = args.exit_key
+csv_file = args.csv_file
+
+# Inform the user about the configured exit key and CSV file
+print(f'Using "{exit_key}" as the exit key and "{csv_file}" as the CSV file.')
+
+# Main loop to capture user input
+while True:
+    # Prompt the user for input
+    user_input = input(f'Enter a character (Press {exit_key} to exit): ')
+
+    # Check if the user wants to exit
+    if user_input == exit_key:
+        print('Exiting...')
+        break
+
+    # Append the user input to the specified CSV file
+    with open(csv_file, mode='a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        while True:
-            user_input = input("Input: ")
-            if user_input.lower() == exit_key.lower():
-                print("Exiting input loop.")
-                break
-            writer.writerow([user_input])
-            print(f"Appended: {user_input}")
+        writer.writerow([user_input])
 
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Append keyboard input to CSV until exit key is pressed."
-    )
-    parser.add_argument(
-        "--exit-key", type=str, default="q", help="Key to exit input loop (default: q)"
-    )
-    parser.add_argument(
-        "--file",
-        type=str,
-        default="output.csv",
-        help="CSV file name (default: output.csv)",
-    )
-    args = parser.parse_args()
-
-    append_to_csv(args.file, args.exit_key)
-
-
-if __name__ == "__main__":
-    main()
+    # Confirm the input back to the user
+    print(f'You entered: {user_input}')
