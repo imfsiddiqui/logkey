@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD024 MD040 -->
 
 # logkey
 
@@ -12,7 +12,7 @@
 
 #### Clone the Repository
 
-```bash
+```
 git clone https://github.com/imfsiddiqui/logkey
 cd logkey
 ```
@@ -24,13 +24,13 @@ cd logkey
 
 Ensure Python installed, then run:
 
-```python
+```
 pip install -r requirements.txt
 ```
 
 #### Run the Application
 
-```python
+```
 python app.py --exit-key <key> --csv-file <filename>
 ```
 
@@ -39,7 +39,7 @@ python app.py --exit-key <key> --csv-file <filename>
 
 #### Example
 
-```bash
+```
 python app.py --exit-key x --csv-file user_inputs.csv
 ```
 
@@ -53,7 +53,7 @@ Ensure Docker installed, then follow the below instructions.
 
 Pull the prebuilt Docker image from Docker Hub:
 
-```bash
+```
 docker pull imfsiddiqui/logkey
 ```
 
@@ -66,14 +66,14 @@ Use the following command to run the application in a Docker container:
 
 ##### Linux
 
-```bash
+```
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
 
 #### Windows: PowerShell
 
-```powershell
+```
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
@@ -86,14 +86,14 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
 
 ##### Linux
 
-```bash
+```
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
 ##### Windows: PowerShell
 
-```powershell
+```
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
