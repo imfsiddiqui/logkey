@@ -1,5 +1,6 @@
-# Ignore Python virtual environment directories
+# Ignore directories
+data/
 venv/
 
-# Ignore CSV files
+# Ignore files
 inputs.csv
