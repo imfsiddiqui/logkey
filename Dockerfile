@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install any required Python packages
-RUN pip install --no-cache-dir argparse
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Command to run the application
 CMD ["python", "app.py"]
