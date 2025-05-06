@@ -30,14 +30,16 @@
   - [Development 🛠️](#development-️)
     - [Update the `requirements.txt` File 📋](#update-the-requirementstxt-file-)
     - [Build the Docker Image 🏗️](#build-the-docker-image-️)
-    - [Test the Docker Image Locally 🧪](#test-the-docker-image-locally-)
       - [Linux 🐧](#linux--2)
       - [Windows: PowerShell 🪟](#windows-powershell--2)
+    - [Test the Docker Image Locally 🧪](#test-the-docker-image-locally-)
+      - [Linux 🐧](#linux--3)
+      - [Windows: PowerShell 🪟](#windows-powershell--3)
     - [Tag the Docker Image 🏷️](#tag-the-docker-image-️)
     - [Push the Docker Image to Docker Hub 📤](#push-the-docker-image-to-docker-hub-)
     - [Verify the Published Image ✅](#verify-the-published-image-)
-      - [Linux 🐧](#linux--3)
-      - [Windows: PowerShell 🪟](#windows-powershell--3)
+      - [Linux 🐧](#linux--4)
+      - [Windows: PowerShell 🪟](#windows-powershell--4)
 
 ## About ℹ️
 
@@ -143,7 +145,7 @@ This will log inputs to `user_inputs.csv` in the current directory on host machi
 
 ## Development 🛠️
 
-If makes any changes to the Python script `app.py` or update the `requirements.txt` file, follow these steps to rebuild and publish the Docker image.
+If made any changes to the Python script `app.py` or update the `requirements.txt` file, follow these steps to rebuild and publish the Docker image.
 
 ### Update the `requirements.txt` File 📋
 
@@ -153,8 +155,16 @@ New dependencies or libraries can be added to the project by adding their name i
 
 Rebuild the Docker image to include the latest changes:
 
+#### Linux 🐧
+
 ```
-docker build -t logkey -f .\Dockerfile .
+docker build -t logkey:latest -f ./Dockerfile .
+```
+
+#### Windows: PowerShell 🪟
+
+```
+docker build -t logkey:latest -f .\Dockerfile .
 ```
 
 ### Test the Docker Image Locally 🧪
@@ -164,14 +174,14 @@ Run the updated Docker image locally to ensure everything works as expected:
 #### Linux 🐧
 
 ```
-docker run -it --rm -v $(pwd)/:/app/data/ logkey \
+docker run -it --rm -v $(pwd)/:/app/data/ logkey:latest \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
 #### Windows: PowerShell 🪟
 
 ```
-docker run -it --rm -v ${PWD}/:/app/data/ logkey `
+docker run -it --rm -v ${PWD}/:/app/data/ logkey:latest `
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
