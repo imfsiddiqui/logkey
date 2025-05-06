@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![logkey](/images/logkey.png)
+![logkey](https://raw.githubusercontent.com/imfsiddiqui/logkey/refs/heads/main/images/logkey.png)
 
 </div>
 
