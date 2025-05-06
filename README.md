@@ -12,7 +12,7 @@
 
 #### Clone the Repository
 
-```sh
+```bash
 git clone https://github.com/imfsiddiqui/logkey
 cd logkey
 ```
@@ -39,7 +39,7 @@ python app.py --exit-key <key> --csv-file <filename>
 
 #### Example
 
-```sh
+```bash
 python app.py --exit-key x --csv-file user_inputs.csv
 ```
 
@@ -53,7 +53,7 @@ Ensure Docker installed, then follow the below instructions.
 
 Pull the prebuilt Docker image from Docker Hub:
 
-```sh
+```bash
 docker pull imfsiddiqui/logkey
 ```
 
@@ -66,7 +66,7 @@ Use the following command to run the application in a Docker container:
 
 ##### Linux
 
-```sh
+```bash
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
@@ -86,7 +86,7 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
 
 ##### Linux
 
-```sh
+```bash
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
