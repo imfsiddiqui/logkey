@@ -64,18 +64,38 @@ docker pull imfsiddiqui/logkey
 
 Use the following command to run the application in a Docker container:
 
+##### Linux
+
 ```sh
-docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey --exit-key <key> --csv-file /app/data/<filename>
+docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
+  python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
 
-- The `-v $(pwd)/:/app/data/` option mounts the current working directory from host machine to the `/app/data/` directory inside the container. This ensures that any CSV files created or updated by the application are stored persistently on host machine, even after the container stops.
+#### Windows: PowerShell
+
+```ps1
+docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
+  python app.py --exit-key <key> --csv-file /app/data/<filename>
+```
+
+- The `-v $(pwd)/:/app/data/` or `-v ${PWD}/:/app/data/` option mounts the current working directory from host machine to the `/app/data/` directory inside the container. This ensures that any CSV files created or updated by the application are stored persistently on host machine, even after the container stops.
 - Replace `<key>` with your desired exit key (default is `q`).
 - Replace `<filename>` with your desired CSV file name (default is `inputs.csv`).
 
 #### Example
 
+##### Linux
+
 ```sh
-docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey --exit-key x --csv-file /app/data/user_inputs.csv
+docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
+  python app.py --exit-key x --csv-file /app/data/user_inputs.csv
+```
+
+##### Windows: PowerShell
+
+```sh
+docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
+  python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
 This will log inputs to `user_inputs.csv` in the current directory on host machine and exit when `x` is pressed.
