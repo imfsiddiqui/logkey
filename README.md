@@ -8,7 +8,10 @@
 
 </div>
 
+## Table of Contents
+
 - [logkey](#logkey)
+  - [Table of Contents](#table-of-contents)
   - [About](#about)
   - [How to Run?](#how-to-run)
     - [Without Docker](#without-docker)
