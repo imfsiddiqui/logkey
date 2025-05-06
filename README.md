@@ -66,6 +66,13 @@ This will log inputs to `user_inputs.csv` and exit when `x` is pressed.
 
 Ensure Docker installed, then follow the below instructions.
 
+> ***Note***
+>
+> In all the following commands:
+>
+> - `imfsiddiqui` is the Docker Hub username.
+> - `logkey` is the Docker image name.
+
 #### Pull the Docker Image
 
 Pull the prebuilt Docker image from Docker Hub:
@@ -73,9 +80,6 @@ Pull the prebuilt Docker image from Docker Hub:
 ```
 docker pull imfsiddiqui/logkey
 ```
-
-- `imfsiddiqui` is the Docker Hub username.
-- `logkey` is the Docker image name.
 
 #### Run the Application
 
