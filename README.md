@@ -2,6 +2,10 @@
 
 # logkey 📝
 
+- **🌐 Web Page:** <https://imfsiddiqui.github.io/logkey/>
+- **📂 Source Code:** <https://github.com/imfsiddiqui/logkey>
+- **📦 Releases:** <https://hub.docker.com/r/imfsiddiqui/logkey>
+
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/imfsiddiqui/logkey/refs/heads/main/images/logkey.png" alt="logkey">
