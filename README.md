@@ -73,7 +73,7 @@ docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
 
 #### Windows: PowerShell
 
-```ps1
+```powershell
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
@@ -93,7 +93,7 @@ docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
 
 ##### Windows: PowerShell
 
-```ps1
+```powershell
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
