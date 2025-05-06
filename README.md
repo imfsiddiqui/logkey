@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD024 -->
+
 # logkey
 
 ## About
@@ -15,9 +17,12 @@ git clone https://github.com/imfsiddiqui/logkey
 cd logkey
 ```
 
+- `imfsiddiqui` is the GitHub username.
+- `logkey` is the repository name.
+
 #### Install Dependencies
 
-Ensure you have Python installed, then run:
+Ensure Python installed, then run:
 
 ```python
 pip install -r requirements.txt
@@ -40,3 +45,37 @@ python app.py --exit-key x --csv-file user_inputs.csv
 
 This will log inputs to `user_inputs.csv` and exit when `x` is pressed.
 
+### With Docker
+
+Ensure Docker installed, then follow the below instructions.
+
+#### Pull the Docker Image
+
+Pull the prebuilt Docker image from Docker Hub:
+
+```sh
+docker pull imfsiddiqui/logkey
+```
+
+- `imfsiddiqui` is the Docker Hub username.
+- `logkey` is the Docker image name.
+
+#### Run the Application
+
+Use the following command to run the application in a Docker container:
+
+```sh
+docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey --exit-key <key> --csv-file /app/data/<filename>
+```
+
+- The `-v $(pwd)/:/app/data/` option mounts the current working directory from host machine to the `/app/data/` directory inside the container. This ensures that any CSV files created or updated by the application are stored persistently on host machine, even after the container stops.
+- Replace `<key>` with your desired exit key (default is `q`).
+- Replace `<filename>` with your desired CSV file name (default is `inputs.csv`).
+
+#### Example
+
+```sh
+docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey --exit-key x --csv-file /app/data/user_inputs.csv
+```
+
+This will log inputs to `user_inputs.csv` in the current directory on host machine and exit when `x` is pressed.
