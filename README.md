@@ -23,7 +23,7 @@
       - [Pull the Docker Image 📥](#pull-the-docker-image-)
       - [Run the Application ▶️](#run-the-application-️-1)
         - [Linux 🐧](#linux-)
-      - [Windows: PowerShell 🪟](#windows-powershell-)
+        - [Windows: PowerShell 🪟](#windows-powershell-)
       - [Example 💡](#example--1)
         - [Linux 🐧](#linux--1)
         - [Windows: PowerShell 🪟](#windows-powershell--1)
@@ -112,7 +112,7 @@ docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
 
-#### Windows: PowerShell 🪟
+##### Windows: PowerShell 🪟
 
 ```
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
