@@ -2,6 +2,24 @@
 
 # logkey
 
+- [logkey](#logkey)
+  - [About](#about)
+  - [How to Run?](#how-to-run)
+    - [Without Docker](#without-docker)
+      - [Clone the Repository](#clone-the-repository)
+      - [Install Dependencies](#install-dependencies)
+      - [Run the Application](#run-the-application)
+      - [Example](#example)
+    - [With Docker](#with-docker)
+      - [Pull the Docker Image](#pull-the-docker-image)
+      - [Run the Application](#run-the-application-1)
+        - [Linux](#linux)
+      - [Windows: PowerShell](#windows-powershell)
+      - [Example](#example-1)
+        - [Linux](#linux-1)
+        - [Windows: PowerShell](#windows-powershell-1)
+
+
 ## About
 
 `logkey` is a Python-based application that logs user input into a CSV file. Users can configure the exit key and the CSV file name via command-line arguments. By default, the exit key is `q`, and the inputs are stored in `inputs.csv`.
