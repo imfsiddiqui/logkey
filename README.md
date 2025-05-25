@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD024 MD033 MD040 -->
 
-# logkey 📝
+# ⌨️ logkey
 
 - **🌐 Web Page:** <https://imfsiddiqui.github.io/logkey/>
 - **📂 Source Code:** <https://github.com/imfsiddiqui/logkey>
@@ -8,52 +8,52 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/imfsiddiqui/logkey/refs/heads/main/images/logkey.png" alt="logkey">
+<img src="https://raw.githubusercontent.com/imfsiddiqui/logkey/refs/heads/main/images/logkey.png" style="border-radius: 10px;" alt="logkey">
 
 </div>
 
-## Table of Contents 📚
+## 📚 Table of Contents
 
-- [logkey 📝](#logkey-)
-  - [Table of Contents 📚](#table-of-contents-)
-  - [About ℹ️](#about-ℹ️)
-  - [How to Run? 🚀](#how-to-run-)
-    - [Without Docker 🐍](#without-docker-)
-      - [Clone the Repository 📂](#clone-the-repository-)
-      - [Install Dependencies 📦](#install-dependencies-)
-      - [Run the Application ▶️](#run-the-application-️)
-      - [Example 💡](#example-)
-    - [With Docker 🐳](#with-docker-)
-      - [Pull the Docker Image 📥](#pull-the-docker-image-)
-      - [Run the Application ▶️](#run-the-application-️-1)
-        - [Linux 🐧](#linux-)
-        - [Windows: PowerShell 🪟](#windows-powershell-)
-      - [Example 💡](#example--1)
-        - [Linux 🐧](#linux--1)
-        - [Windows: PowerShell 🪟](#windows-powershell--1)
-  - [Development 🛠️](#development-️)
-    - [Update the `requirements.txt` File 📋](#update-the-requirementstxt-file-)
-    - [Build the Docker Image 🏗️](#build-the-docker-image-️)
-      - [Linux 🐧](#linux--2)
-      - [Windows: PowerShell 🪟](#windows-powershell--2)
-    - [Test the Docker Image Locally 🧪](#test-the-docker-image-locally-)
-      - [Linux 🐧](#linux--3)
-      - [Windows: PowerShell 🪟](#windows-powershell--3)
-    - [Tag the Docker Image 🏷️](#tag-the-docker-image-️)
-    - [Push the Docker Image to Docker Hub 📤](#push-the-docker-image-to-docker-hub-)
-    - [Verify the Published Image ✅](#verify-the-published-image-)
-      - [Linux 🐧](#linux--4)
-      - [Windows: PowerShell 🪟](#windows-powershell--4)
+- [⌨️ logkey](#️-logkey)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [📌 About](#-about)
+  - [🚀 How to Run?](#-how-to-run)
+    - [🐍 Without Docker](#-without-docker)
+      - [📂 Clone the Repository](#-clone-the-repository)
+      - [📦 Install Dependencies](#-install-dependencies)
+      - [▶️ Run the Application](#️-run-the-application)
+      - [💡 Example](#-example)
+    - [🐳 With Docker](#-with-docker)
+      - [📥 Pull the Docker Image](#-pull-the-docker-image)
+      - [▶️ Run the Application](#️-run-the-application-1)
+        - [🐧 Linux](#-linux)
+        - [🪟 Windows: PowerShell](#-windows-powershell)
+      - [💡 Example](#-example-1)
+        - [🐧 Linux](#-linux-1)
+        - [🪟 Windows: PowerShell](#-windows-powershell-1)
+  - [🛠️ Development](#️-development)
+    - [📋 Update the `requirements.txt` File](#-update-the-requirementstxt-file)
+    - [🏗️ Build the Docker Image](#️-build-the-docker-image)
+      - [🐧 Linux](#-linux-2)
+      - [🪟 Windows: PowerShell](#-windows-powershell-2)
+    - [🧪 Test the Docker Image Locally](#-test-the-docker-image-locally)
+      - [🐧 Linux](#-linux-3)
+      - [🪟 Windows: PowerShell](#-windows-powershell-3)
+    - [🏷️ Tag the Docker Image](#️-tag-the-docker-image)
+    - [📤 Push the Docker Image to Docker Hub](#-push-the-docker-image-to-docker-hub)
+    - [✅ Verify the Published Image](#-verify-the-published-image)
+      - [🐧 Linux](#-linux-4)
+      - [🪟 Windows: PowerShell](#-windows-powershell-4)
 
-## About ℹ️
+## 📌 About
 
 `logkey` is a Python-based application that logs user input into a CSV file. Users can configure the exit key and the CSV file name via command-line arguments. By default, the exit key is `q`, and the inputs are stored in `inputs.csv`.
 
-## How to Run? 🚀
+## 🚀 How to Run?
 
-### Without Docker 🐍
+### 🐍 Without Docker
 
-#### Clone the Repository 📂
+#### 📂 Clone the Repository
 
 ```
 git clone https://github.com/imfsiddiqui/logkey
@@ -63,7 +63,7 @@ cd logkey
 - `imfsiddiqui` is the GitHub username.
 - `logkey` is the repository name.
 
-#### Install Dependencies 📦
+#### 📦 Install Dependencies
 
 Ensure Python installed, then run:
 
@@ -71,7 +71,7 @@ Ensure Python installed, then run:
 pip install -r requirements.txt
 ```
 
-#### Run the Application ▶️
+#### ▶️ Run the Application
 
 ```
 python app.py --exit-key <key> --csv-file <filename>
@@ -80,7 +80,7 @@ python app.py --exit-key <key> --csv-file <filename>
 - Replace `<key>` with your desired exit key (default is `q`).
 - Replace `<filename>` with your desired CSV file name (default is `inputs.csv`).
 
-#### Example 💡
+#### 💡 Example
 
 ```
 python app.py --exit-key x --csv-file user_inputs.csv
@@ -88,7 +88,7 @@ python app.py --exit-key x --csv-file user_inputs.csv
 
 This will log inputs to `user_inputs.csv` and exit when `x` is pressed.
 
-### With Docker 🐳
+### 🐳 With Docker
 
 Ensure Docker installed, then follow the below instructions.
 
@@ -99,7 +99,7 @@ Ensure Docker installed, then follow the below instructions.
 > - `imfsiddiqui` is the Docker Hub username.
 > - `logkey` is the Docker image name.
 
-#### Pull the Docker Image 📥
+#### 📥 Pull the Docker Image
 
 Pull the prebuilt Docker image from Docker Hub:
 
@@ -107,18 +107,18 @@ Pull the prebuilt Docker image from Docker Hub:
 docker pull imfsiddiqui/logkey
 ```
 
-#### Run the Application ▶️
+#### ▶️ Run the Application
 
 Use the following command to run the application in a Docker container:
 
-##### Linux 🐧
+##### 🐧 Linux
 
 ```
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
 
-##### Windows: PowerShell 🪟
+##### 🪟 Windows: PowerShell
 
 ```
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
@@ -129,16 +129,16 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
 - Replace `<key>` with your desired exit key (default is `q`).
 - Replace `<filename>` with your desired CSV file name (default is `inputs.csv`).
 
-#### Example 💡
+#### 💡 Example
 
-##### Linux 🐧
+##### 🐧 Linux
 
 ```
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
-##### Windows: PowerShell 🪟
+##### 🪟 Windows: PowerShell
 
 ```
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
@@ -147,49 +147,49 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
 
 This will log inputs to `user_inputs.csv` in the current directory on host machine and exit when `x` is pressed.
 
-## Development 🛠️
+## 🛠️ Development
 
 If made any changes to the Python script `app.py` or update the `requirements.txt` file, follow these steps to rebuild and publish the Docker image.
 
-### Update the `requirements.txt` File 📋
+### 📋 Update the `requirements.txt` File
 
 New dependencies or libraries can be added to the project by adding their name in the `requirements.txt` file.
 
-### Build the Docker Image 🏗️
+### 🏗️ Build the Docker Image
 
 Rebuild the Docker image to include the latest changes:
 
-#### Linux 🐧
+#### 🐧 Linux
 
 ```
 docker build -t logkey:latest -f ./Dockerfile .
 ```
 
-#### Windows: PowerShell 🪟
+#### 🪟 Windows: PowerShell
 
 ```
 docker build -t logkey:latest -f .\Dockerfile .
 ```
 
-### Test the Docker Image Locally 🧪
+### 🧪 Test the Docker Image Locally
 
 Run the updated Docker image locally to ensure everything works as expected:
 
-#### Linux 🐧
+#### 🐧 Linux
 
 ```
 docker run -it --rm -v $(pwd)/:/app/data/ logkey:latest \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
-#### Windows: PowerShell 🪟
+#### 🪟 Windows: PowerShell
 
 ```
 docker run -it --rm -v ${PWD}/:/app/data/ logkey:latest `
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
-### Tag the Docker Image 🏷️
+### 🏷️ Tag the Docker Image
 
 Tag the Docker image with a version number or `latest`:
 
@@ -199,7 +199,7 @@ docker tag logkey:latest imfsiddiqui/logkey:<version>
 
 Replace `<version>` with the appropriate version number e.g. `1.0.1` or `latest`.
 
-### Push the Docker Image to Docker Hub 📤
+### 📤 Push the Docker Image to Docker Hub
 
 Publish the updated Docker image to Docker Hub:
 
@@ -213,7 +213,7 @@ docker push imfsiddiqui/logkey:<version>
 docker push imfsiddiqui/logkey:latest
 ```
 
-### Verify the Published Image ✅
+### ✅ Verify the Published Image
 
 Pull the image from Docker Hub to verify it was published correctly:
 
@@ -229,14 +229,14 @@ docker pull imfsiddiqui/logkey:latest
 
 Run the pulled image to ensure it works as expected:
 
-#### Linux 🐧
+#### 🐧 Linux
 
 ```
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
-#### Windows: PowerShell 🪟
+#### 🪟 Windows: PowerShell
 
 ```
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
