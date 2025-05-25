@@ -1,10 +1,45 @@
 <!-- markdownlint-disable MD024 MD033 MD040 -->
 
-# ⌨️ logkey
+# 📝 logkey
 
-- **🌐 Web Page:** <https://imfsiddiqui.github.io/logkey/>
-- **📂 Source Code:** <https://github.com/imfsiddiqui/logkey>
-- **📦 Releases:** <https://hub.docker.com/r/imfsiddiqui/logkey>
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"></th>
+      <th style="text-align: right"><strong>🔗 Links</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">🌍 <strong>Web Page</strong></td>
+      <td style="text-align: right">
+        <a href="https://imfsiddiqui.github.io/logkey/"
+          >https://imfsiddiqui.github.io/logkey/</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">💻 <strong>Source Code</strong></td>
+      <td style="text-align: right">
+        <a href="https://github.com/imfsiddiqui/logkey"
+          >https://github.com/imfsiddiqui/logkey</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">📦 <strong>Releases</strong></td>
+      <td style="text-align: right">
+        <a href="https://hub.docker.com/r/imfsiddiqui/logkey"
+          >https://hub.docker.com/r/imfsiddiqui/logkey</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 <div align="center">
 
@@ -14,7 +49,7 @@
 
 ## 📚 Table of Contents
 
-- [⌨️ logkey](#️-logkey)
+- [📝 logkey](#-logkey)
   - [📚 Table of Contents](#-table-of-contents)
   - [📌 About](#-about)
   - [🚀 How to Run?](#-how-to-run)
