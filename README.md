@@ -2,9 +2,7 @@
 
 # 📝 logkey
 
-<div align="center">
-
-<table>
+<table style="margin-left: auto; margin-right: auto; border: 1px solid black;">
   <thead>
     <tr>
       <th style="text-align: left"></th>
@@ -38,8 +36,6 @@
     </tr>
   </tbody>
 </table>
-
-</div>
 
 <div align="center">
 
