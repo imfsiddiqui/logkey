@@ -1,5 +1,4 @@
 # Ignore directories
-data/
 venv/
 
 # Ignore files
