@@ -2,7 +2,7 @@
 
 # 📝 logkey
 
-<ul style="text-align: center; list-style-type: none; padding-left: 0">
+<ul style="list-style-type: none; padding-left: 0">
   <li>
     🌍 <strong>Web Page:</strong>
     <a href="https://imfsiddiqui.github.io/logkey"
