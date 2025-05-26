@@ -1,27 +1,27 @@
 name: Create and publish a Docker image
 
-# Configures this workflow to run every time a tag starting
-# with 'v' (like v1.0.0, v2.3.4) is pushed
+# Configures this workflow to run every time a tag starting with 'v' like
+# v1.0.0, v2.3.4 is pushed
 on:
   push:
     tags:
       - 'v*'
 
-# Defines two custom environment variables for the workflow.
-# These are used for the Container registry domain, and a
-# name for the Docker image that this workflow builds.
+# Defines two custom environment variables for the workflow. These are used for
+# the Container registry domain, and a name for the Docker image that this
+# workflow builds.
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
-# There is a single job in this workflow. It's configured
-# to run on the latest available version of Ubuntu.
+# There is a single job in this workflow. It's configured to run on the latest
+# available version of Ubuntu.
 jobs:
   build-and-push-image:
     name: Build and push image
     runs-on: ubuntu-latest
-    # Sets the permissions granted to the `GITHUB_TOKEN`
-    # for the actions in this job.
+    # Sets the permissions granted to the `GITHUB_TOKEN` for the actions in
+    # this job.
     permissions:
       contents: read
       packages: write
@@ -31,10 +31,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Uses the `docker/login-action` action to log in to
-      # the Container registry registry using the account
-      # and password that will publish the packages. Once
-      # published, the packages are scoped to the account
+      # Uses the `docker/login-action` action to log in to the Container
+      # registry registry using the account and password that will publish
+      # the packages. Once published, the packages are scoped to the account
       # defined here.
       - name: Log in to the Container registry
         uses: docker/login-action@v3.4.0
@@ -44,10 +43,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # This step uses [docker/metadata-action](https://github.com/docker/metadata-action#about)
-      # to extract tags and labels that will be applied to
-      # the specified image. The `id` "meta" allows the output
-      # of this step to be referenced in a subsequent step.
-      # The `images` value provides the base name for the tags
+      # to extract tags and labels that will be applied to the specified image.
+      # The `id` "meta" allows the output of this step to be referenced in a
+      # subsequent step. The `images` value provides the base name for the tags
       # and labels.
       - name: Extract metadata (tags, labels) for Docker
         id: meta
@@ -55,16 +53,15 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      # This step uses the `docker/build-push-action` action to
-      # build the image, based on your repository's `Dockerfile`.
-      # If the build succeeds, it pushes the image to GitHub
-      # Packages.
-      # It uses the `context` parameter to define the build's
-      # context as the set of files located in the specified path.
-      # For more information, see [Usage](https://github.com/docker/build-push-action#usage)
+      # This step uses the `docker/build-push-action` action to build the
+      # image, based on your repository's `Dockerfile`. If the build succeeds,
+      # it pushes the image to GitHub Packages.
+      # It uses the `context` parameter to define the build's context as the
+      # set of files located in the specified path. For more information, see
+      # [Usage](https://github.com/docker/build-push-action#usage)
       # in the README of the `docker/build-push-action` repository.
-      # It uses the `tags` and `labels` parameters to tag and
-      # label the image with the output from the "meta" step.
+      # It uses the `tags` and `labels` parameters to tag and label the image
+      # with the output from the "meta" step.
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v6.17.0
@@ -83,12 +80,15 @@ jobs:
           package_name=$(echo "${repo}" | awk -F '/' '{print $2}')
           
           # List all package versions
-          versions=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+          versions=$(curl -s \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
             "${github_api}/users/${{ github.repository_owner }}/packages/container/${package_name}/versions")
 
           # Loop through versions and delete untagged ones
           echo "$versions" | jq -r '.[] | select(.metadata.container.tags | length == 0) | .id' | while read -r version_id; do
             echo "Deleting untagged image version: $version_id"
-            curl -s -X DELETE -H "Authorization: Bearer $GITHUB_TOKEN" \
+            curl -s \
+              -X DELETE \
+              -H "Authorization: Bearer $GITHUB_TOKEN" \
               "${github_api}/users/${{ github.repository_owner }}/packages/container/${package_name}/versions/${version_id}"
           done
