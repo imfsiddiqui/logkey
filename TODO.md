@@ -2,7 +2,10 @@
 
 This file contains a list of tasks, improvements, and ideas for this repository.
 
+## 📚 Table of Contents
+
 - [📝 TODO](#-todo)
+  - [📚 Table of Contents](#-table-of-contents)
   - [🪧 Legend](#-legend)
   - [📝 List](#-list)
 
