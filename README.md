@@ -2,6 +2,8 @@
 
 # 📝 logkey
 
+<a id="readme-top"></a>
+
 <ul style="list-style-type: none; padding-left: 0">
   <li>
     🌍 <strong>Web Page:</strong>
@@ -76,9 +78,13 @@
       - [🐧 Linux](#-linux-4)
       - [🪟 Windows: PowerShell](#-windows-powershell-4)
 
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+
 ## 📌 About
 
 `logkey` is a Python-based application that logs user input into a CSV file. Users can configure the exit key and the CSV file name via command-line arguments. By default, the exit key is `q`, and the inputs are stored in `inputs.csv`.
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ## 🚀 How to Run?
 
@@ -118,6 +124,8 @@ python app.py --exit-key x --csv-file user_inputs.csv
 ```
 
 This will log inputs to `user_inputs.csv` and exit when `x` is pressed.
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### 🐳 With Docker
 
@@ -178,6 +186,8 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
 
 This will log inputs to `user_inputs.csv` in the current directory on host machine and exit when `x` is pressed.
 
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+
 ## 🛠️ Development
 
 If made any changes to the Python script `app.py` or update the `requirements.txt` file, follow these steps to rebuild and publish the Docker image.
@@ -185,6 +195,8 @@ If made any changes to the Python script `app.py` or update the `requirements.tx
 ### 📋 Update the `requirements.txt` File
 
 New dependencies or libraries can be added to the project by adding their name in the `requirements.txt` file.
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### 🏗️ Build the Docker Image
 
@@ -201,6 +213,8 @@ docker build -t logkey:latest -f ./Dockerfile .
 ```powershell
 docker build -t logkey:latest -f .\Dockerfile .
 ```
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### 🧪 Test the Docker Image Locally
 
@@ -220,6 +234,8 @@ docker run -it --rm -v ${PWD}/:/app/data/ logkey:latest `
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+
 ### 🏷️ Tag the Docker Image
 
 Tag the Docker image with a version number or `latest`:
@@ -229,6 +245,8 @@ docker tag logkey:latest imfsiddiqui/logkey:<version>
 ```
 
 Replace `<version>` with the appropriate version number e.g. `1.0.1` or `latest`.
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### 📤 Push the Docker Image to Docker Hub
 
@@ -243,6 +261,8 @@ docker push imfsiddiqui/logkey:<version>
 ```shell
 docker push imfsiddiqui/logkey:latest
 ```
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### ✅ Verify the Published Image
 
@@ -275,3 +295,5 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
 ```
 
 By these steps, this can be ensured that updates are reflected in the Docker image and published for others to use.
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
