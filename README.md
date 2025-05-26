@@ -74,7 +74,7 @@
 
 #### 📂 Clone the Repository
 
-```
+```shell
 git clone https://github.com/imfsiddiqui/logkey
 cd logkey
 ```
@@ -86,13 +86,13 @@ cd logkey
 
 Ensure Python installed, then run:
 
-```
+```shell
 pip install -r requirements.txt
 ```
 
 #### ▶️ Run the Application
 
-```
+```shell
 python app.py --exit-key <key> --csv-file <filename>
 ```
 
@@ -101,7 +101,7 @@ python app.py --exit-key <key> --csv-file <filename>
 
 #### 💡 Example
 
-```
+```shell
 python app.py --exit-key x --csv-file user_inputs.csv
 ```
 
@@ -122,7 +122,7 @@ Ensure Docker installed, then follow the below instructions.
 
 Pull the prebuilt Docker image from Docker Hub:
 
-```
+```shell
 docker pull imfsiddiqui/logkey
 ```
 
@@ -132,14 +132,14 @@ Use the following command to run the application in a Docker container:
 
 ##### 🐧 Linux
 
-```
+```shell
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
 
 ##### 🪟 Windows: PowerShell
 
-```
+```powershell
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
   python app.py --exit-key <key> --csv-file /app/data/<filename>
 ```
@@ -152,14 +152,14 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
 
 ##### 🐧 Linux
 
-```
+```shell
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
 ##### 🪟 Windows: PowerShell
 
-```
+```powershell
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
@@ -180,13 +180,13 @@ Rebuild the Docker image to include the latest changes:
 
 #### 🐧 Linux
 
-```
+```shell
 docker build -t logkey:latest -f ./Dockerfile .
 ```
 
 #### 🪟 Windows: PowerShell
 
-```
+```powershell
 docker build -t logkey:latest -f .\Dockerfile .
 ```
 
@@ -196,14 +196,14 @@ Run the updated Docker image locally to ensure everything works as expected:
 
 #### 🐧 Linux
 
-```
+```shell
 docker run -it --rm -v $(pwd)/:/app/data/ logkey:latest \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
 #### 🪟 Windows: PowerShell
 
-```
+```powershell
 docker run -it --rm -v ${PWD}/:/app/data/ logkey:latest `
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
@@ -212,7 +212,7 @@ docker run -it --rm -v ${PWD}/:/app/data/ logkey:latest `
 
 Tag the Docker image with a version number or `latest`:
 
-```
+```shell
 docker tag logkey:latest imfsiddiqui/logkey:<version>
 ```
 
@@ -222,13 +222,13 @@ Replace `<version>` with the appropriate version number e.g. `1.0.1` or `latest`
 
 Publish the updated Docker image to Docker Hub:
 
-```
+```shell
 docker push imfsiddiqui/logkey:<version>
 ```
 
 `latest` tag can also be published:
 
-```
+```shell
 docker push imfsiddiqui/logkey:latest
 ```
 
@@ -236,13 +236,13 @@ docker push imfsiddiqui/logkey:latest
 
 Pull the image from Docker Hub to verify it was published correctly:
 
-```
+```shell
 docker pull imfsiddiqui/logkey:<version>
 ```
 
 or
 
-```
+```shell
 docker pull imfsiddiqui/logkey:latest
 ```
 
@@ -250,14 +250,14 @@ Run the pulled image to ensure it works as expected:
 
 #### 🐧 Linux
 
-```
+```shell
 docker run -it --rm -v $(pwd)/:/app/data/ imfsiddiqui/logkey \
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
 #### 🪟 Windows: PowerShell
 
-```
+```powershell
 docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
