@@ -2,40 +2,13 @@
 
 <a id="readme-top"></a>
 
-# 📝 logkey
+<div align=center>
 
-<ul style="list-style-type: none; padding-left: 0">
-  <li>
-    🌍 <strong>Web Page:</strong>
-    <a href="https://imfsiddiqui.github.io/logkey"
-      >https://imfsiddiqui.github.io/logkey</a
-    >
-  </li>
-  <li>
-    💻 <strong>Source Code:</strong>
-    <a href="https://github.com/imfsiddiqui/logkey"
-      >https://github.com/imfsiddiqui/logkey</a
-    >
-  </li>
-  <li>
-    🚀 <strong>Releases: </strong>
-    <a href="https://github.com/imfsiddiqui/logkey/releases"
-      >https://github.com/imfsiddiqui/logkey/releases</a
-    >
-  </li>
-  <li>
-    🎁 <strong>Packages: </strong>
-    <a href="https://github.com/imfsiddiqui?tab=packages&repo_name=logkey"
-      >https://github.com/imfsiddiqui?tab=packages&repo_name=logkey</a
-    >
-  </li>
-  <li>
-    🐳 <strong>Docker Hub: </strong>
-    <a href="https://hub.docker.com/r/imfsiddiqui/logkey"
-      >https://hub.docker.com/r/imfsiddiqui/logkey</a
-    >
-  </li>
-</ul>
+🏠 **[Home](https://imfsiddiqui.github.io/logkey)** | 🌍 **[Web Page](https://imfsiddiqui.github.io/logkey)** | 💻 **[Source Code](https://github.com/imfsiddiqui/logkey)** | 🚀 **[Releases](https://github.com/imfsiddiqui/logkey/releases)** | 🎁 **[Packages](https://github.com/imfsiddiqui?tab=packages&repo_name=logkey)** | 🐳 **[Docker Hub](https://hub.docker.com/r/imfsiddiqui/logkey)** | 📝 **[TODO](./TODO.html)**
+
+</div>
+
+# 📝 logkey
 
 <div align="center">
   <img
