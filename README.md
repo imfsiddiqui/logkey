@@ -1,8 +1,8 @@
-<!-- markdownlint-disable MD024 MD033 MD040 -->
-
-# 📝 logkey
+<!-- markdownlint-disable MD024 MD033 MD040 MD041 -->
 
 <a id="readme-top"></a>
+
+# 📝 logkey
 
 <ul style="list-style-type: none; padding-left: 0">
   <li>
@@ -78,9 +78,9 @@
       - [🐧 Linux](#-linux-4)
       - [🪟 Windows: PowerShell](#-windows-powershell-4)
   - [🐙 GitHub Actions](#-github-actions)
-    - [📄 `.github/workflows/pages.yml`](#-githubworkflowspagesyml)
-    - [📄 `.github/workflows/release.yml`](#-githubworkflowsreleaseyml)
-    - [📄 `.github/workflows/package.yml`](#-githubworkflowspackageyml)
+    - [⚙️ `.github/workflows/pages.yml`](#️-githubworkflowspagesyml)
+    - [⚙️ `.github/workflows/release.yml`](#️-githubworkflowsreleaseyml)
+    - [⚙️ `.github/workflows/package.yml`](#️-githubworkflowspackageyml)
 
 <p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
@@ -294,15 +294,15 @@ By these steps, this can be ensured that updates are reflected in the Docker ima
 
 Following GitHub Actions are being used to automate key workflows:
 
-### 📄 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
+### ⚙️ [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
 
 Automatically builds and deploys the documentation website using Jekyll whenever changes are pushed to the default branch or the workflow is manually triggered.
 
-### 📄 [`.github/workflows/release.yml`](.github/workflows/release.yml)
+### ⚙️ [`.github/workflows/release.yml`](.github/workflows/release.yml)
 
 Creates a new GitHub release when a tag starting with `v` is pushed. This automates the release process and makes new versions easily accessible to users.
 
-### 📄 [`.github/workflows/package.yml`](.github/workflows/package.yml)
+### ⚙️ [`.github/workflows/package.yml`](.github/workflows/package.yml)
 
 Builds a Docker image and publishes it to GitHub Container Registry (`ghcr.io`) every time a new tag starting with `v` (e.g., `v1.0.0`) is pushed. This ensures the latest version of the application is always available as a container image.
 
