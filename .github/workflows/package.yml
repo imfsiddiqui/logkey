@@ -37,7 +37,7 @@ jobs:
       # published, the packages are scoped to the account
       # defined here.
       - name: Log in to the Container registry
-        uses: docker/login-action@latest
+        uses: docker/login-action@v3.4.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
@@ -51,7 +51,7 @@ jobs:
       # and labels.
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@latest
+        uses: docker/metadata-action@v5.7.0
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
@@ -67,7 +67,7 @@ jobs:
       # label the image with the output from the "meta" step.
       - name: Build and push Docker image
         id: push
-        uses: docker/build-push-action@latest
+        uses: docker/build-push-action@v6.17.0
         with:
           context: .
           push: true
