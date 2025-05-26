@@ -4,7 +4,7 @@
 
 <div align=center>
 
-🏠 **[Home](https://imfsiddiqui.github.io/logkey)** | 🌍 **[Web Page](https://imfsiddiqui.github.io/logkey)** | 💻 **[Source Code](https://github.com/imfsiddiqui/logkey)** | 🚀 **[Releases](https://github.com/imfsiddiqui/logkey/releases)** | 🎁 **[Packages](https://github.com/imfsiddiqui?tab=packages&repo_name=logkey)** | 🐳 **[Docker Hub](https://hub.docker.com/r/imfsiddiqui/logkey)** | 📝 **[TODO](./TODO.html)**
+<p>🏠 <strong><a href="https://imfsiddiqui.github.io/logkey">Home</a></strong> | 🌍 <strong><a href="https://imfsiddiqui.github.io/logkey">Web Page</a></strong> | 💻 <strong><a href="https://github.com/imfsiddiqui/logkey">Source Code</a></strong> | 🚀 <strong><a href="https://github.com/imfsiddiqui/logkey/releases">Releases</a></strong> | 🎁 <strong><a href="https://github.com/imfsiddiqui?tab=packages&amp;repo_name=logkey">Packages</a></strong> | 🐳 <strong><a href="https://hub.docker.com/r/imfsiddiqui/logkey">Docker Hub</a></strong> | 📝 <strong><a href="./TODO.html">TODO</a></strong></p>
 
 </div>
 
