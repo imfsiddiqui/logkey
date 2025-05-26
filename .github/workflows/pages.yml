@@ -53,5 +53,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
     environment:
-      name: GitHub Pages
+      name: ${{ github.repository }}-github-pages
       url: ${{ steps.deployment.outputs.page_url }}
