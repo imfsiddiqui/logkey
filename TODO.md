@@ -1,3 +1,7 @@
+<!-- markdownlint-disable MD033 MD041 -->
+
+<a id="readme-top"></a>
+
 # 📝 TODO
 
 This file contains a list of tasks, improvements, and ideas for this repository.
@@ -9,6 +13,8 @@ This file contains a list of tasks, improvements, and ideas for this repository.
   - [🪧 Legend](#-legend)
   - [📝 List](#-list)
 
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+
 ## 🪧 Legend
 
 - ⏳ Not started
@@ -18,11 +24,17 @@ This file contains a list of tasks, improvements, and ideas for this repository.
 - 🟡 Medium priority
 - 🟢 Low priority
 
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+
 ## 📝 List
 
 - 🟡⏳ Add GitHub Actions automated workflow for publishing image on Docker Hub
 - 🟡⏳ Add details of building Docker image and publishing to GitHub Container Registry in README.md
 
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+
 ---
 
 📌 ***Last updated:* May 26, 2025**
+
+<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
