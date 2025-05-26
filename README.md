@@ -125,8 +125,6 @@ python app.py --exit-key x --csv-file user_inputs.csv
 
 This will log inputs to `user_inputs.csv` and exit when `x` is pressed.
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
-
 ### 🐳 With Docker
 
 Ensure Docker installed, then follow the below instructions.
@@ -196,8 +194,6 @@ If made any changes to the Python script `app.py` or update the `requirements.tx
 
 New dependencies or libraries can be added to the project by adding their name in the `requirements.txt` file.
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
-
 ### 🏗️ Build the Docker Image
 
 Rebuild the Docker image to include the latest changes:
@@ -213,8 +209,6 @@ docker build -t logkey:latest -f ./Dockerfile .
 ```powershell
 docker build -t logkey:latest -f .\Dockerfile .
 ```
-
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### 🧪 Test the Docker Image Locally
 
@@ -234,8 +228,6 @@ docker run -it --rm -v ${PWD}/:/app/data/ logkey:latest `
   python app.py --exit-key x --csv-file /app/data/user_inputs.csv
 ```
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
-
 ### 🏷️ Tag the Docker Image
 
 Tag the Docker image with a version number or `latest`:
@@ -245,8 +237,6 @@ docker tag logkey:latest imfsiddiqui/logkey:<version>
 ```
 
 Replace `<version>` with the appropriate version number e.g. `1.0.1` or `latest`.
-
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### 📤 Push the Docker Image to Docker Hub
 
@@ -261,8 +251,6 @@ docker push imfsiddiqui/logkey:<version>
 ```shell
 docker push imfsiddiqui/logkey:latest
 ```
-
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
 
 ### ✅ Verify the Published Image
 
