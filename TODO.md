@@ -1,6 +1,18 @@
-<!-- markdownlint-disable MD033 MD041 -->
+---
+layout: default
+title: logkey - TODO
+description: List of tasks, improvements, and ideas for this repository.
+---
+
+<!-- markdownlint-disable MD025 MD033 MD041 -->
 
 <a id="readme-top"></a>
+
+<div align=center>
+
+🏠 **[Home](https://imfsiddiqui.github.io/logkey)** | 🌍 **[Web Page](https://imfsiddiqui.github.io/logkey)** | 💻 **[Source Code](https://github.com/imfsiddiqui/logkey)** | 🚀 **[Releases](https://github.com/imfsiddiqui/logkey/releases)** | 🎁 **[Packages](https://github.com/imfsiddiqui?tab=packages&repo_name=logkey)** | 🐳 **[Docker Hub](https://hub.docker.com/r/imfsiddiqui/logkey)** | 📝 **[TODO](./TODO.html)**
+
+</div>
 
 # 📝 TODO
 
@@ -35,6 +47,6 @@ This file contains a list of tasks, improvements, and ideas for this repository.
 
 ---
 
-📌 ***Last updated:* May 26, 2025**
+📌 **Last updated:** ***May 26, 2025***
 
 <p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
