@@ -296,7 +296,7 @@ Following GitHub Actions are being used to automate key workflows:
 
 ### 🤖 [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
 
-Automatically builds and deploys the documentation website using Jekyll whenever changes are pushed to the default branch or the workflow is manually triggered.
+Automatically builds and deploys the documentation website using Jekyll whenever changes are pushed to the default branch `main`, a new tag starting with `v` (e.g., `v1.0.0`) is pushed, or the workflow is manually triggered.
 
 ### 🤖 [`.github/workflows/release.yml`](.github/workflows/release.yml)
 
