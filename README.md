@@ -16,7 +16,19 @@
     >
   </li>
   <li>
-    📦 <strong>Releases: </strong>
+    🚀 <strong>Releases: </strong>
+    <a href="https://github.com/imfsiddiqui/logkey/releases"
+      >https://github.com/imfsiddiqui/logkey/releases</a
+    >
+  </li>
+  <li>
+    🎁 <strong>Packages: </strong>
+    <a href="https://github.com/imfsiddiqui?tab=packages&repo_name=logkey"
+      >https://github.com/imfsiddiqui?tab=packages&repo_name=logkey</a
+    >
+  </li>
+  <li>
+    🐳 <strong>Docker Hub: </strong>
     <a href="https://hub.docker.com/r/imfsiddiqui/logkey"
       >https://hub.docker.com/r/imfsiddiqui/logkey</a
     >
