@@ -1,7 +1,7 @@
 ---
 layout: default
 title: logkey - TODO
-description: List of tasks, improvements, and ideas for this repository.
+description: List of tasks, improvements, and ideas for this project.
 ---
 
 <!-- markdownlint-disable MD025 MD033 MD041 -->
@@ -28,7 +28,7 @@ description: List of tasks, improvements, and ideas for this repository.
 
 # 📝 TODO
 
-This file contains a list of tasks, improvements, and ideas for this repository.
+This file contains a list of tasks, improvements, and ideas for this project.
 
 ## 📚 Table of Contents
 
