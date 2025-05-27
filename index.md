@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!-- markdownlint-disable MD024 MD033 MD040 MD041 -->
 
 <a id="readme-top"></a>
