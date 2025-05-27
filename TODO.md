@@ -10,7 +10,19 @@ description: List of tasks, improvements, and ideas for this repository.
 
 <div align=center>
 
-<p>🏠 <strong><a href="https://imfsiddiqui.github.io/logkey">Home</a></strong> | 🌍 <strong><a href="https://imfsiddiqui.github.io/logkey">Web Page</a></strong> | 💻 <strong><a href="https://github.com/imfsiddiqui/logkey">Source Code</a></strong> | 🚀 <strong><a href="https://github.com/imfsiddiqui/logkey/releases">Releases</a></strong> | 🎁 <strong><a href="https://github.com/imfsiddiqui?tab=packages&amp;repo_name=logkey">Packages</a></strong> | 🐳 <strong><a href="https://hub.docker.com/r/imfsiddiqui/logkey">Docker Hub</a></strong></p>
+<p>
+  🏠 <strong><a href="https://imfsiddiqui.github.io/logkey">Home</a></strong>
+  |
+  🌍 <strong><a href="https://imfsiddiqui.github.io/logkey">Web Page</a></strong>
+  |
+  💻 <strong><a href="https://github.com/imfsiddiqui/logkey">Source Code</a></strong>
+  |
+  🚀 <strong><a href="https://github.com/imfsiddiqui/logkey/releases">Releases</a></strong>
+  |
+  🎁 <strong><a href="https://github.com/imfsiddiqui?tab=packages&amp;repo_name=logkey">Packages</a></strong>
+  |
+  🐳 <strong><a href="https://hub.docker.com/r/imfsiddiqui/logkey">Docker Hub</a></strong>
+</p>
 
 </div>
 
