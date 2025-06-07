@@ -1,10 +1,10 @@
-<!-- markdownlint-disable MD024 MD033 MD040 MD041 -->
+<!-- markdownlint-disable MD024 MD033 MD041 -->
 
-<a id="readme-top"></a>
+<a id="top"></a>
 
 <div align=center>
 
-🌍 **[Web Page](https://imfsiddiqui.github.io/logkey)** | 💻 **[Source Code](https://github.com/imfsiddiqui/logkey)** | 🚀 **[Releases](https://github.com/imfsiddiqui/logkey/releases)** | 🎁 **[Packages](https://github.com/imfsiddiqui?tab=packages&repo_name=logkey)** | 🐳 **[Docker Hub](https://hub.docker.com/r/imfsiddiqui/logkey)** | 📝 **[TODO](./TODO.md)**
+🌍 **[Web Page](https://imfsiddiqui.github.io/logkey)** | 💻 **[Source Code](https://github.com/imfsiddiqui/logkey)** | 🚀 **[Releases](https://github.com/imfsiddiqui/logkey/releases)**
 
 </div>
 
@@ -12,7 +12,7 @@
 
 <div align="center">
   <img
-    src="https://raw.githubusercontent.com/imfsiddiqui/logkey/refs/heads/main/images/logkey.png"
+    src="https://raw.githubusercontent.com/imfsiddiqui/logkey/refs/heads/main/.github/pages/assets/images/logkey.png"
     style="border-radius: 10px"
     alt="logkey"
   />
@@ -55,13 +55,13 @@
     - [🤖 `.github/workflows/release.yml`](#-githubworkflowsreleaseyml)
     - [🤖 `.github/workflows/package.yml`](#-githubworkflowspackageyml)
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
 
 ## 📌 About
 
 `logkey` is a Python-based application that logs user input into a CSV file. Users can configure the exit key and the CSV file name via command-line arguments. By default, the exit key is `q`, and the inputs are stored in `inputs.csv`.
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
 
 ## 🚀 How to Run?
 
@@ -161,7 +161,7 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
 
 This will log inputs to `user_inputs.csv` in the current directory on host machine and exit when `x` is pressed.
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
 
 ## 🛠️ Development
 
@@ -261,7 +261,7 @@ docker run -it --rm -v ${PWD}/:/app/data/ imfsiddiqui/logkey `
 
 By these steps, this can be ensured that updates are reflected in the Docker image and published for others to use.
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
 
 ## 🐙 GitHub Actions
 
@@ -279,4 +279,4 @@ Creates a new GitHub release when a tag starting with `v` is pushed. This automa
 
 Builds a Docker image and publishes it to GitHub Container Registry (`ghcr.io`) every time a new tag starting with `v` (e.g., `v1.0.0`) is pushed. This ensures the latest version of the application is always available as a container image.
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
