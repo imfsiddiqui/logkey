@@ -10,6 +10,8 @@
 
 # 📝 logkey
 
+A lightweight Python application to log user inputs into a CSV file with Docker support for easy deployment and GitHub Actions to automate key workflows.
+
 <div align="center">
   <img
     src="https://raw.githubusercontent.com/imfsiddiqui/logkey/refs/heads/main/.github/pages/assets/images/logkey.png"
