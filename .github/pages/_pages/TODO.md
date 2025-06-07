@@ -1,6 +1,6 @@
 ---
 layout: default
-title: logkey - TODO
+title: TODO
 description: List of tasks, improvements, and ideas for this project.
 ---
 
