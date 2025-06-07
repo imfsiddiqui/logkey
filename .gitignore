@@ -1,5 +1,64 @@
-# Ignore directories
+# Build and distribution
+*.egg-info/
+bin/
+build/
+dist/
+out/
+
+# Debug and runtime
+*.app
+*.dll
+*.exe
+*.out
+*.so
+
+# Editor
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw
+*.swo
+*.swp
+*~
+
+# Environment
+.env
+.env.development
+.env.local
+.env.production
+.env.test
+
+# Linux
+*~
+
+# Log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac
+.AppleDouble
+.DS_Store
+.LSOverride
+
+# Node.js dependencies
+node_modules/
+
+# Python bytecode and virtual environments
+__pycache__/
+.venv/
+*.py[cod]
+*.pyd
+*.pyo
+env/
 venv/
 
-# Ignore files
+# Windows
+$RECYCLE.BIN/
+Desktop.ini
+Thumbs.db
+
+# Others
 inputs.csv
