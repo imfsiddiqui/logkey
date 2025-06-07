@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+favicon_emoji:
 repository_name: logkey
 title: logkey
 description: A lightweight Python application to log user inputs into a CSV file with Docker support for easy deployment and GitHub Actions to automate key workflows.
