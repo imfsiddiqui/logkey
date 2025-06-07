@@ -1,30 +1,6 @@
----
-layout: default
-title: TODO
-description: List of tasks, improvements, and ideas for this project.
----
+<!-- markdownlint-disable MD033 MD041 -->
 
-<!-- markdownlint-disable MD025 MD033 MD041 -->
-
-<a id="readme-top"></a>
-
-<div align=center>
-
-<p>
-  🏠 <strong><a href="https://imfsiddiqui.github.io/logkey">Home</a></strong>
-  |
-  🌍 <strong><a href="https://imfsiddiqui.github.io/logkey">Web Page</a></strong>
-  |
-  💻 <strong><a href="https://github.com/imfsiddiqui/logkey">Source Code</a></strong>
-  |
-  🚀 <strong><a href="https://github.com/imfsiddiqui/logkey/releases">Releases</a></strong>
-  |
-  🎁 <strong><a href="https://github.com/imfsiddiqui?tab=packages&amp;repo_name=logkey">Packages</a></strong>
-  |
-  🐳 <strong><a href="https://hub.docker.com/r/imfsiddiqui/logkey">Docker Hub</a></strong>
-</p>
-
-</div>
+<a id="top"></a>
 
 # 📝 TODO
 
@@ -35,30 +11,50 @@ This file contains a list of tasks, improvements, and ideas for this project.
 - [📝 TODO](#-todo)
   - [📚 Table of Contents](#-table-of-contents)
   - [🪧 Legend](#-legend)
+    - [📊 State](#-state)
+    - [🚨 Priority](#-priority)
   - [📝 List](#-list)
+    - [✨ Features](#-features)
+    - [🐛 Bugs](#-bugs)
+    - [♻️ Refactoring](#️-refactoring)
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
 
 ## 🪧 Legend
+
+### 📊 State
 
 - ⏳ Not started
 - 🔄 In progress
 - ✅ Done
+
+### 🚨 Priority
+
 - 🔴 High priority
 - 🟡 Medium priority
 - 🟢 Low priority
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
 
 ## 📝 List
+
+### ✨ Features
 
 - 🟡⏳ Add GitHub Actions automated workflow for publishing image on Docker Hub
 - 🟡⏳ Add details of building Docker image and publishing to GitHub Container Registry in README.md
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+### 🐛 Bugs
+
+-
+
+### ♻️ Refactoring
+
+-
+
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
 
 ---
 
-📌 **Last updated:** ***May 26, 2025***
+📌 **Last updated:** ***June 07, 2025***
 
-<p align="right">(<a href="#readme-top">🔝 back to top</a>)</p>
+<p align="right">(<a href="#top">🔝 back to top</a>)</p>
