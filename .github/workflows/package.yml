@@ -78,7 +78,7 @@ jobs:
           repo="${{ github.repository }}"
           github_api="https://api.github.com"
           package_name=$(echo "${repo}" | awk -F '/' '{print $2}')
-          
+
           # List all package versions
           versions=$(curl -s \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
