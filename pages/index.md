@@ -34,9 +34,9 @@ A lightweight Python application to log user inputs into a CSV file with Docker 
 
 <div align="center">
   <img
-    src="./assets/images/logkey.png"
+    src="./assets/images/{{ site.repository_name }}.png"
     style="border-radius: 10px"
-    alt="logkey"
+    alt="{{ site.repository_name }}"
   />
 </div>
 
