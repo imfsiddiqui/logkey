@@ -27,9 +27,11 @@ change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 
 template: |
   ## 📦 What's Changed
+
   $CHANGES
 
   ## 🙌 Contributors
+
   $CONTRIBUTORS
 
 version-resolver:
