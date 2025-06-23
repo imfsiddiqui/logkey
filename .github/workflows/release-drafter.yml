@@ -1,9 +1,13 @@
-name: 📝 Draft Release Notes
+name: Draft Release Notes
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
+  pull-requests: read
 
 jobs:
   update_release_draft:
