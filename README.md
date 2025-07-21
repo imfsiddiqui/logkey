@@ -17,7 +17,7 @@
 
 </div>
 
-# 📝 logkey
+# 🔑 logkey
 
 A lightweight Python application to log user inputs into a CSV file with Docker
 support for easy deployment and GitHub Actions to automate key workflows.
@@ -32,7 +32,7 @@ support for easy deployment and GitHub Actions to automate key workflows.
 
 ## 📚 Table of Contents
 
-- [📝 logkey](#-logkey)
+- [🔑 logkey](#-logkey)
   - [📚 Table of Contents](#-table-of-contents)
   - [📌 About](#-about)
   - [🚀 How to Run?](#-how-to-run)
