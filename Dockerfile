@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.13-slim
+FROM python:3.13.5-alpine3.22
 
 # Set the working directory in the container
 WORKDIR /app
@@ -11,4 +11,4 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Command to run the application
-CMD ["python", "app.py"]
+CMD ["python", "src/logkey/logkey.py"]
