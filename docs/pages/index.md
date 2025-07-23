@@ -35,7 +35,7 @@ support for easy deployment and GitHub Actions to automate key workflows.
 
 <div align="center">
   <img
-    src="./assets/images/banner-standard.png"
+    src="{{ site.baseurl }}/assets/images/banner-standard.png"
     style="border-radius: 10px"
     alt="project banner"
   />
