@@ -35,6 +35,8 @@ support for easy deployment and GitHub Actions to automate key workflows.
 - [🔑 logkey](#-logkey)
   - [📚 Table of Contents](#-table-of-contents)
   - [📌 About](#-about)
+  - [🧠 Philosophy](#-philosophy)
+  - [🔑 Key Features](#-key-features)
   - [🚀 How to Run?](#-how-to-run)
     - [🐍 Without Docker](#-without-docker)
       - [📂 Clone the Repository](#-clone-the-repository)
@@ -66,6 +68,8 @@ support for easy deployment and GitHub Actions to automate key workflows.
     - [🤖 .github/workflows/pages.yaml](#-githubworkflowspagesyaml)
     - [🤖 .github/workflows/release.yaml](#-githubworkflowsreleaseyaml)
     - [🤖 .github/workflows/package.yaml](#-githubworkflowspackageyaml)
+  - [📄 Important Documents](#-important-documents)
+  - [📜 License](#-license)
 
 <p align="right"><a href="#top">☝️</a></p>
 
@@ -74,6 +78,25 @@ support for easy deployment and GitHub Actions to automate key workflows.
 logkey is a Python-based application that logs user input into a CSV file. Users
 can configure the exit key and the CSV file name via command-line arguments. By
 default, the exit key is `q`, and the inputs are stored in `inputs.csv`.
+
+<p align="right"><a href="#top">☝️</a></p>
+
+## 🧠 Philosophy
+
+The philosophy behind logkey is to demonstrate the use of Python with Docker and
+how GitHub Actions can be used to automate key workflows like GitHub Pages
+deployment, release management, and Docker image packaging.
+
+<p align="right"><a href="#top">☝️</a></p>
+
+## 🔑 Key Features
+
+- **Docker Support**: Run the application in a Docker container for easy
+  deployment and portability.
+- **GitHub Actions**: Automate workflows for documentation deployment, release
+  management, and Docker image packaging.
+- **Open Source**: Licensed under the MIT License, allowing anyone to use,
+  modify, and distribute it freely.
 
 <p align="right"><a href="#top">☝️</a></p>
 
@@ -309,5 +332,38 @@ automates the release process and makes new versions easily accessible to users.
 Builds a Docker image and publishes it to GitHub Container Registry (`ghcr.io`)
 every time a new tag starting with `v` (e.g., `v1.0.0`) is pushed. This ensures
 the latest version of the application is always available as a container image.
+
+<p align="right"><a href="#top">☝️</a></p>
+
+## 📄 Important Documents
+
+- [Changelog](https://github.com/imfsiddiqui/logkey/blob/main/docs/CHANGELOG.md):
+  Changelog of all notable changes.
+- [Code of Conduct](https://github.com/imfsiddiqui/logkey/blob/main/docs/CODE-OF-CONDUCT.md):
+  Code of Conduct for contributors.
+- [Commit Message Instructions](https://github.com/imfsiddiqui/logkey/blob/main/.github/copilot/commit-message-instructions.md):
+  Commit message guidelines for contributors and Copilot.
+- [Contribution Guidelines](https://github.com/imfsiddiqui/logkey/blob/main/docs/CONTRIBUTING.md):
+  How to contribute to this project.
+- [License](https://github.com/imfsiddiqui/logkey/blob/main/LICENSE.md): License
+  text.
+- [Pull Request Description Instructions](https://github.com/imfsiddiqui/logkey/blob/main/.github/copilot/pull-request-description-instructions.md):
+  Pull request guidelines for contributors and Copilot.
+- [Roadmap](https://github.com/imfsiddiqui/logkey/blob/main/docs/ROADMAP.md):
+  High-level strategic plan, long-term goals, milestones, and overall project
+  vision.
+- [Security Policy](https://github.com/imfsiddiqui/logkey/blob/main/docs/SECURITY.md):
+  Security policy and reporting instructions.
+- [Todo](https://github.com/imfsiddiqui/logkey/blob/main/docs/TODO.md):
+  Day-to-day task tracking and immediate execution.
+
+<p align="right"><a href="#top">☝️</a></p>
+
+## 📜 License
+
+This project is licensed under the
+[MIT License](https://github.com/imfsiddiqui/logkey/blob/main/LICENSE.md),
+allowing anyone to use, modify, and distribute it freely for personal or
+commercial purposes.
 
 <p align="right"><a href="#top">☝️</a></p>
