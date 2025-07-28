@@ -15,13 +15,13 @@ import csv
 # Set up argument parser
 parser = argparse.ArgumentParser(description="Log user input to a CSV file.")
 parser.add_argument(
-    "--exit-key", type=str, default="q", help='Key to exit the program (default: "q").'
+    "--exit-key", type=str, default="q", help="Key to exit the program (default: 'q')."
 )
 parser.add_argument(
     "--csv-file",
     type=str,
     default="inputs.csv",
-    help='CSV file to store inputs (default: "inputs.csv").',
+    help="CSV file to store inputs (default: 'inputs.csv').",
 )
 
 # Parse arguments
@@ -30,7 +30,7 @@ exit_key = args.exit_key
 csv_file = args.csv_file
 
 # Inform the user about the configured exit key and CSV file
-print(f'Using "{exit_key}" as the exit key and "{csv_file}" as the CSV file.')
+print(f"Using '{exit_key}' as the exit key and '{csv_file}' as the CSV file.")
 
 # Main loop to capture user input
 while True:
